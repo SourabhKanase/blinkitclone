@@ -151,9 +151,15 @@ element.style {
     margin-inline:100px;
 }
 .abcd{
-    margin-bottom: 400px !important;
+    margin-bottom: 100px !important;
     
 }
-.xyz{
+.xyza{
     margin-left: 200px;
+    margin-top: 300px;
+}
+.Lastcolor{
+    color:#a0a0a0;
+    font-size:15px;
+    margin-top: 5px;
 }
