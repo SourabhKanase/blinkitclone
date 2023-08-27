@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+   <nav class=" bg-ligth d-flex border-bottom py-2 justify-content-between align-items-center navbar">
+    <a class=" px-5 BlinkitLogo__LogoContainer-sc-xocpjl-0 jzxMvs" href="/"><svg width="134" height="30" viewBox="0 0 114 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.3342 7.186C16.2619 7.186 17.9832 7.66644 19.4978 8.62732C21.0262 9.57447 22.2242 10.9197 23.0917 12.663C23.9316 14.3377 24.3516 16.3075 24.3516 18.5724C24.3516 20.7687 23.9316 22.7316 23.0917 24.4612C22.2517 26.1908 21.0675 27.5429 19.5391 28.5175C17.9969 29.5058 16.2619 30 14.3342 30C12.9297 30 11.6078 29.7117 10.3685 29.1352C9.12927 28.5587 8.06901 27.7488 7.18775 26.7056V29.4852H0V0H7.18775V10.4598C8.06901 9.41661 9.12927 8.61359 10.3685 8.05079C11.6078 7.47426 12.9297 7.186 14.3342 7.186ZM12.1861 24.0494C13.2051 24.0494 14.1139 23.8161 14.9125 23.3493C15.7112 22.8826 16.3377 22.2306 16.7921 21.3933C17.2465 20.5697 17.4737 19.6294 17.4737 18.5724C17.4737 17.5429 17.2465 16.6095 16.7921 15.7721C16.3377 14.9348 15.7112 14.2828 14.9125 13.8161C14.1139 13.3493 13.2051 13.116 12.1861 13.116C11.2223 13.116 10.3617 13.3493 9.60432 13.8161C8.84699 14.269 8.2549 14.9073 7.82804 15.731C7.40118 16.5683 7.18775 17.5154 7.18775 18.5724C7.18775 19.6294 7.40118 20.5765 7.82804 21.4139C8.2549 22.2375 8.84699 22.8826 9.60432 23.3493C10.3617 23.8161 11.2223 24.0494 12.1861 24.0494Z" fill="#F8CB46"></path><path d="M25.3356 29.4852V0H32.5233V29.4852H25.3356Z" fill="#F8CB46"></path><path d="M34.5607 29.4852V7.68016H41.7071V29.4852H34.5607Z" fill="#F8CB46"></path><path d="M57.2319 7.186C58.7603 7.186 60.1372 7.5429 61.3627 8.25669C62.5882 8.95676 63.5521 9.94509 64.2544 11.2217C64.9291 12.512 65.2664 13.9739 65.2664 15.6074V29.4852H58.4092V17.2135C58.4092 16.4173 58.2508 15.7104 57.9341 15.0927C57.6312 14.4612 57.1974 13.9739 56.6329 13.6307C56.0821 13.2876 55.4349 13.116 54.6914 13.116C53.9891 13.116 53.3419 13.2876 52.7498 13.6307C52.1577 13.9602 51.6965 14.4132 51.366 14.9897C51.0218 15.5388 50.8496 16.1839 50.8496 16.9252L50.8083 29.4852H43.6619V7.68016H50.8083V10.1716C51.483 9.23816 52.3849 8.51064 53.5141 7.98902C54.6432 7.45367 55.8824 7.186 57.2319 7.186Z" fill="#F8CB46"></path><path d="M81.0597 17.2135L89.1769 29.4852H81.0597L76.3091 21.7639L74.1198 24.2965V29.4852H66.932V0H74.1198V16.2869L81.0184 7.68016H89.1356L81.0597 17.2135Z" fill="#F8CB46"></path><path d="M34.5569 0.00232667H41.7267V5.59207H34.5569V0.00232667Z" fill="#F8CB46"></path><path d="M90.3176 29.4198V7.61479H97.464V29.4198H90.3176Z" fill="#54B226"></path><path d="M112.575 23.2634L114 27.855C113.353 28.4727 112.534 28.9737 111.542 29.3581C110.564 29.7424 109.607 29.9346 108.671 29.9346C107.322 29.9346 106.117 29.6395 105.057 29.0492C103.996 28.4452 103.17 27.6079 102.578 26.5372C101.986 25.494 101.69 24.2929 101.69 22.9339V13.3183H98.819V7.61479H101.69V0.00241089H108.547V7.61479H113.071V13.3183H108.547V21.6161C108.547 22.3162 108.733 22.8859 109.105 23.3251C109.477 23.7644 109.952 23.984 110.53 23.984C110.943 23.984 111.329 23.9223 111.687 23.7987C112.045 23.6752 112.341 23.4967 112.575 23.2634Z" fill="#54B226"></path><path d="M90.2609 0.00241089H97.4307V5.59215H90.2609V0.00241089Z" fill="#54B226"></path></svg></a>
+    <div class="Location py-2 ">
+        <h5>Delivery in 10 minutes</h5>
+        <p>Mumbai,Maharashtra,India<i class="fa-solid fa-caret-down"></i></p>
+    </div>
+    <div class="inputdiv">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search" class="inputone">
+    </div>
+    <button type="submit" class="btn btn-lg ">Login</button>
+    <button type="submit"class="btn  btn-lg btn-success Mycart px-2 py-2 " ><i class="fa-solid fa-cart-shopping"></i>My Cart</button>
+   </nav>
+
+
+<section class="hero container my-4">
+    <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=1440/layout-engine/2022-05/Group-33704.jpg" alt="paan corner banner" width="1280" height="234.8623853211009" loading="eager" style="border-radius: 0px; object-fit: fill; cursor: default;">
+</section>
+
+
+<!-- part2 -->
+ 
+<div class=" abc my-5">
+    <div class="two">
+        <img class="pe-3" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-08/Web-Raksha-Bandhan.jpg" alt="masthead_web_f23_rakhi" width="335.40000000000003" height="195" loading="lazy" style="border-radius: 16px; object-fit: fill; cursor: default;">
+        <img class="pe-3" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2022-06/morning-banner.jpg" alt="pb_breakfast_time" width="335.40000000000003" height="195" loading="lazy" style="border-radius: 16px; object-fit: fill; cursor: default;">
+        <img class="pe-3" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-07/electronics-WEB.jpg" alt="masthead_web_electronic_store" width="335.40000000000003" height="195" loading="lazy" style="border-radius: 16px; object-fit: fill; cursor: default;">
+        <img class="pe-3" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-03/beauty-WEB.jpg" alt="masthead_web_beauty_store" width="335.40000000000003" height="195" loading="lazy" style="border-radius: 16px; object-fit: fill; cursor: default;">
+        <img class="pe-3" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-07/pharmacy-WEB.jpg" alt="masthead_web_pharma" width="335.40000000000003" height="195" loading="lazy" style="border-radius: 16px; object-fit: fill; cursor: default;">
+        <img class="pe-3" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-03/babycare-WEB.jpg" alt="masthead_web_baby_care" width="335.40000000000003" height="195" loading="lazy" style="border-radius: 16px; object-fit: fill; cursor: default;">
+        <img class="pe-3" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2023-07/Pet-Care_WEB.jpg" alt="masthead_web_pet_care" width="335.40000000000003" height="195" loading="lazy" style="border-radius: 16px; object-fit: fill; cursor: default;">
+    </div>
+
+</div>
+
+
+
+<section class=" sectiontwo">
+    <div class="d-flex justify-content-center flex-wrap heroimages">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-11.png" alt="11 - Masala, Oil &amp; More " width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-12.png" alt="12 - Sauces &amp; Spreads" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-13.png" alt="13 - Chicken, Meat &amp; Fish " width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-14.png" alt="14 - Organic &amp; Healthy Living" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-15.png" alt="15 - Baby Care" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-16.png" alt="16 - Pharma &amp; Wellness" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-17.png" alt="17 - Clening Essentials" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-18.png" alt="18 - Home &amp; Office " width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-19.png" alt="19 - Personal Care" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-20.png" alt="20 - Pet Care" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-12/paan-corner_web.png" alt="1 - Paan Corner" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-2_10.png" alt="2 - Dairy, Bread &amp; Eggs" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-3_9.png" alt="3 - Fruits &amp; Vegetables" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-4_9.png" alt="4 - Cold Drinks &amp; Juices " width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-5_4.png" alt="5 - Snacks &amp; Munchies " width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-6_5.png" alt="6 - Breakfast &amp; Instant Food" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-7_3.png" alt="7 - Sweet Tooth" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-8_4.png" alt="8 - Bakery &amp; Biscuits" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-9_3.png" alt="9 - Tea, Coffee &amp; Health Drink " width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-10.png" alt="10 - Atta, Rice &amp; Dal" width="128" height="188.23529411764704" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+    </div>
+</section>
+
+<!-- third -->
+
+
+<h2 class="h2here">Dairy,Bread & Eggs</h2>
+<section class="Main  ">
+    
+   
+    <div class="my-list ">
+        
+        <div class="card shadow my-card1  flex-column p-2 d-inline-block">
+            <img class=" d-flex align-items-center img1" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/127031a.jpg?ts=1688811024" alt="Britannia 100% Whole Wheat Bread" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <!-- <img height=""  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/127031a.jpg?ts=1688811024"> -->
+            <div class="imgpad" class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Britannia 100% Whole</p>
+            <p class=" my-B">Wheat Bread</p>
+            <p class=" price">400 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹50</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+
+        <div class="card shadow my-card1 d-inline-block flex-column p-2 ">
+            <!-- <img class=" d-flex align-items-center img1" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/127031a.jpg?ts=1688811024" alt="Britannia 100% Whole Wheat Bread" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;"> -->
+            <!-- <img height=""  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/127031a.jpg?ts=1688811024"> -->
+            <img class="imgpad" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/329500a.jpg?ts=1687949315" alt="Amul Fresh Malai Paneer" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Amul Fresh Malai</p>
+            <p class=" my-B">Paneer</p>
+            <p class=" price">200 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹91</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="card shadow my-card1 d-inline-block flex-column p-2">
+            <!-- <img class=" d-flex align-items-center img1" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/127031a.jpg?ts=1688811024" alt="Britannia 100% Whole Wheat Bread" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;"> -->
+            <!-- <img height=""  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/127031a.jpg?ts=1688811024"> -->
+            <img class="imgpad" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913" alt="Mother Dairy Classic Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Mother Dairy Classic</p>
+            <p class=" my-B">Curd</p>
+            <p class=" price">400 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹34</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            <!-- <img class=" d-flex align-items-center img1" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/127031a.jpg?ts=1688811024" alt="Britannia 100% Whole Wheat Bread" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;"> -->
+            <!-- <img height=""  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/127031a.jpg?ts=1688811024"> -->
+            <img class="imgpad" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/160a.jpg?ts=1689327537" alt="Amul Salted Butter" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Amul Salted Buttor</p>
+            <p class=" my-B"><br></p>
+            <p class=" price">500 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹275</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+        <div class="card shadow my-card1 d-inline-block flex-column p-2">
+            <!-- <img class=" d-flex align-items-center img1" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/127031a.jpg?ts=1688811024" alt="Britannia 100% Whole Wheat Bread" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;"> -->
+            <!-- <img height=""  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/127031a.jpg?ts=1688811024"> -->
+            <img class="imgpad" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/170a.jpg?ts=1689327537" alt="Amul Cheese Cubes" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Amul Cheese Cubes</p>
+            <p class=" my-B"><br></p>
+            <p class=" price">200 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹131</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+        <div class="card shadow my-card1 d-inline-block flex-column p-2">
+            <!-- <img class=" d-flex align-items-center img1" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/127031a.jpg?ts=1688811024" alt="Britannia 100% Whole Wheat Bread" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;"> -->
+            <!-- <img height=""  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/127031a.jpg?ts=1688811024"> -->
+            <img class="imgpad" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/26164a.jpg?ts=1690814323" alt="Amul Mithai Mate Condensed Milk" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Amul Mithai Mate</p>
+            <p class=" my-B">Condensed Milk</p>
+            <p class=" price">200 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹63<div style="color: rgb(130, 130, 130); font-weight: 400; font-size: 12px; text-decoration-line: line-through;" class="mx-0">₹66</div></p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            <!-- <img class=" d-flex align-items-center img1" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/127031a.jpg?ts=1688811024" alt="Britannia 100% Whole Wheat Bread" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;"> -->
+            <!-- <img height=""  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/127031a.jpg?ts=1688811024"> -->
+            <img class="imgpad" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/19512a.jpg?ts=1690813414" alt="Amul Taaza Toned Fresh Milk" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Amul Taaza Toned</p>
+            <p class=" my-B">Fresh Milk</p>
+            <p class=" price">500 ml</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹27</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            <!-- <img class=" d-flex align-items-center img1" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/127031a.jpg?ts=1688811024" alt="Britannia 100% Whole Wheat Bread" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;"> -->
+            <!-- <img height=""  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/127031a.jpg?ts=1688811024"> -->
+            <img class="imgpad" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/368150a.jpg?ts=1690813704" alt="Britannia Vitarich Sandwich White Bread" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Britannia Vitarich</p>
+            <p class=" my-B"> Sandwich White Bread</p>
+            <p class=" price">350 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹35</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            
+            <img class="imgpad" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/68554a.jpg?ts=1687948910" alt="Amul Masti Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <!-- <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/368150a.jpg?ts=1690813704" alt="Britannia Vitarich Sandwich White Bread" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;"> -->
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Amul Masti Curd</p>
+            <p class=" my-B"> <br></p>
+            <p class=" price">200 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹22</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            
+            <img class="imgpad" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/15364a.jpg?ts=1687525088" alt="Britannia Brown Bread" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Britannia Brown Bread</p>
+            <p class=" my-B"> <br></p>
+            <p class=" price">400 g </p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹45</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            <img class="imgpad" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/125240a.jpg?ts=1688628278" alt="Amul Cheese Slices" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <!-- <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/368150a.jpg?ts=1690813704" alt="Britannia Vitarich Sandwich White Bread" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;"> -->
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Amul Cheese Slices</p>
+            <p class=" my-B"> <br></p>
+            <p class=" price">100 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹80</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+
+<h2 class="h2here">Rolling paper & tobacoo</h2>
+<section class="Main ">
+    
+   
+    <div class="my-list ">
+        
+        <div class="card shadow my-card1  flex-column p-2 d-inline-block">
+            <img class="imgpad"src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/496996a.jpg?ts=1690814374" alt="Brown Rolling Paper Cones - Stash Pro" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <!-- <img height=""  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/127031a.jpg?ts=1688811024"> -->
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Brown Rolling Paper</p>
+            <p class=" my-B">Cones - Stash Pro</p>
+            <p class=" price">6 pieces</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹90</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+
+        <div class="card shadow my-card1 d-inline-block flex-column p-2 ">
+            <img class="imgpad" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/496994a.jpg?ts=1690814628" alt="Brown Rolling Paper + Roach with Crushing Tray - Stash Pro" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Brown Rolling Paper +</p>
+            <p class=" my-B">Roach with Crushing</p>
+            <p class=" price">1 pack</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹222</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="card shadow my-card1 d-inline-block flex-column p-2">
+            <img class="imgpad" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/477311a.jpg?ts=1692701354" alt="Brown Rolling Paper (King Size) - Stash Pro" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Brown Rolling Paper</p>
+            <p class=" my-B">(King Size) - Stash Pro</p>
+            <p class=" price">1 unit(32 pieces)</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹50</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/480940a.jpg?ts=1690813442" alt="White Rolling Paper Tips - Elements" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">White Rolling Paper</p>
+            <p class=" my-B">Tips -Elements</p>
+            <p class=" price">1 pack(50 pieces)</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹50<div style="color: rgb(130, 130, 130); font-weight: 400; font-size: 12px; text-decoration-line: line-through;">₹79</div></p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+        <div class="card shadow my-card1 d-inline-block flex-column p-2">
+            <img class="imgpad" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/480937a.jpg?ts=1690813393" alt="White Connoisseur Slim Rolling Paper with Tips (King Size) - Elements" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">White Connoisseur Slim</p>
+            <p class=" my-B">Rolling Paper with Tip...</p>
+            <p class=" price">1 pack(32 +32 pieces)</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹160<div style="color: rgb(130, 130, 130); font-weight: 400; font-size: 12px; text-decoration-line: line-through;">₹250</div></p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+        <div class="card shadow my-card1 d-inline-block flex-column p-2">
+            <img class="imgpad" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/480951a.jpg?ts=1690814339" alt="White Slim Rolling Paper (King Size) - Elements" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">White Slim Rolling</p>
+            <p class=" my-B">Paper(king Size)-..</p>
+            <p class=" price">1 pack (32 pieces)</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹95<div style="color: rgb(130, 130, 130); font-weight: 400; font-size: 12px; text-decoration-line: line-through;" class="mx-0">₹149</div></p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            <img class="imgpad" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/477467a.jpg?ts=1690814848" alt="Black Classic Slim Rolling Paper (King Size) - Raw" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Black Classic Slim</p>
+            <p class=" my-B">Rolling Paper(king)</p>
+            <p class=" price">1 pack (32 pieces)</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹120</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            <img class="imgpad" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/480942a.jpg?ts=1690808898" alt="Brown Single Wide Rolling Paper - Raw" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Brown Single Wide</p>
+            <p class=" my-B">Rolling Paper -Raw</p>
+            <p class=" price">1 pack(50 pieces)</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹90<div style="color: rgb(130, 130, 130); font-weight: 400; font-size: 12px; text-decoration-line: line-through;">₹149</div></p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            
+            <img class="imgpad" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/496998a.jpg?ts=1690814342" alt="White Rolling Paper - Stash Pro" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">White Rolling Paper -</p>
+            <p class=" my-B"> Stash Pro</p>
+            <p class=" price">4 * 32 Sheets</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹130</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<h2 class="h2here">Snacks & Munchies</h2>
+<section class="Main  ">
+    
+   
+    <div class="my-list ">
+        
+        <div class="card shadow my-card1  flex-column p-2 d-inline-block">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/240092a.jpg?ts=1687324818" alt="Lay's India's Magic Masala Chips (40 g)" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="imgpad" class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Lay's India's Magic</p>
+            <p class=" my-B">Masala Chips (40 g)</p>
+            <p class=" price">40 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹20</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+
+        <div class="card shadow my-card1 d-inline-block flex-column p-2 ">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/385315a.jpg?ts=1688973591" alt="Mr. Makhana Lime &amp; Chilli Makhana" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Mr.Makhana Lime &</p>
+            <p class=" my-B">Chilli Makhana</p>
+            <p class=" price">25 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹48<div style="color: rgb(130, 130, 130); font-weight: 400; font-size: 12px; text-decoration-line: line-through;">₹49</div></p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="card shadow my-card1 d-inline-block flex-column p-2">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/372138a.jpg?ts=1687616753" alt="Chheda's Farsan Mixture Namkeen" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Chheda's Farsan</p>
+            <p class=" my-B">Mixture Namkeen</p>
+            <p class=" price">170 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹45<div style="color: rgb(130, 130, 130); font-weight: 400; font-size: 12px; text-decoration-line: line-through;">₹55</div></p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/372136a.jpg?ts=1687243865" alt="Chheda's Bhakarwadi Namkeen" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Chheda's Bhakarwadi</p>
+            <p class=" my-B">Namkeen</p>
+            <p class=" price">170 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹51<div style="color: rgb(130, 130, 130); font-weight: 400; font-size: 12px; text-decoration-line: line-through;">₹60</div></p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+        <div class="card shadow my-card1 d-inline-block flex-column p-2">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/138835a.jpg?ts=1688469112" alt="Lijjat Plain Urad Papad" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Lijjat Plain Urad Papad</p>
+            <p class=" my-B"><br></p>
+            <p class=" price">200 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹72</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+        <div class="card shadow my-card1 d-inline-block flex-column p-2">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/432818a.jpg?ts=1688444559" alt="Doritos Cheese Nachos" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Doritos cheese nachos</p>
+            <p class=" my-B"><br></p>
+            <p class=" price">60 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹30</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/54056a.jpg?ts=1687525097" alt="Act II Golden Sizzle Popcorn (Pressure Cooker)" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Act || Golden Sizzle</p>
+            <p class=" my-B">Popcorn</p>
+            <p class=" price">30 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹10</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/289152a.jpg?ts=1684345618" alt="Lay's West Indies Hot n Sweet Chilli Flavour Chips" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Lay's West Indies Hot n</p>
+            <p class=" my-B"> Sweet Chilli Flavour</p>
+            <p class=" price">48 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹20</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/345988a.jpg?ts=1687243865" alt="Chheda's Kachori Namkeen" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Chheda's Kachori</p>
+            <p class=" my-B">Namkeen</p>
+            <p class=" price">170 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹51<div style="color: rgb(130, 130, 130); font-weight: 400; font-size: 12px; text-decoration-line: line-through;">₹60</div></p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/385313a.jpg?ts=1688630458" alt="Mr. Makhana Pudina Party Makhana" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Mr.Makhana Pudina</p>
+            <p class=" my-B"> Party Makhana</p>
+            <p class=" price">25 g </p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹48</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/372144a.jpg?ts=1687243866" alt="Chheda's Soya Snax Namkeen" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Chheda's Soya Snax</p>
+            <p class=" my-B"> Namkeen</p>
+            <p class=" price">170 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹43</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+
+<h2 class="h2here">Cold Drinks & Juices</h2>
+<section class="Main  ">
+    <div class="my-list ">
+        
+        <div class="card shadow my-card1  flex-column p-2 d-inline-block">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/20143a.jpg?ts=1687525090" alt="Real Fruit Power Cranberry Juice" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="imgpad" class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Real Fruit Power</p>
+            <p class=" my-B">Cranberry Juice</p>
+            <p class=" price">1 L</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹120<div style="color: rgb(130, 130, 130); font-weight: 400; font-size: 12px; text-decoration-line: line-through;">₹130</div></p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+
+        <div class="card shadow my-card1 d-inline-block flex-column p-2 ">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/277a.jpg?ts=1689327540" alt="Hamdard Rooh Afza Rose Sharbat" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Hamdard Rooh Afza</p>
+            <p class=" my-B">Rose Sharbat</p>
+            <p class=" price">750 ml</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹170</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="card shadow my-card1 d-inline-block flex-column p-2">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/34353a.jpg?ts=1690814578" alt="Bisleri Packaged Water" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Bisleri Packaged Water</p>
+            <p class=" my-B">Mixture Namkeen</p>
+            <p class=" price">5 L</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹70</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/97250a.jpg?ts=1688628274" alt="Maaza Mango Drink 1.2 l" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Maaza Mango Drink 1.2L</p>
+            <p class=" my-B"><br></p>
+            <p class=" price">1.2L</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹74<div style="color: rgb(130, 130, 130); font-weight: 400; font-size: 12px; text-decoration-line: line-through;">₹75</div></p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+        <div class="card shadow my-card1 d-inline-block flex-column p-2">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/385a.jpg?ts=1689327544" alt="Red Bull Energy Drink (250 ml)" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Red Bull Energy Drink</p>
+            <p class=" my-B">(250 ml)</p>
+            <p class=" price">250 ml</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹125</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+        <div class="card shadow my-card1 d-inline-block flex-column p-2">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/376a.jpg?ts=1689327543" alt="Tropicana 100% Orange Juice" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Tropicana 100% Orange</p>
+            <p class=" my-B">Juice</p>
+            <p class=" price">1L</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹138<div style="color: rgb(130, 130, 130); font-weight: 400; font-size: 12px; text-decoration-line: line-through;">₹145</div></p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/455587a.jpg?ts=1690985838" alt="Real Fruit Power Coconut Water" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Real Fruit Power</p>
+            <p class=" my-B">Coconut Water</p>
+            <p class=" price">1L</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹91<div style="color: rgb(130, 130, 130); font-weight: 400; font-size: 12px; text-decoration-line: line-through;">₹170</div></p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/314a.jpg?ts=1690814449" alt="Thums Up Soft Drink (750 ml)" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Thums Up Soft Drink</p>
+            <p class=" my-B"> (750 ml)</p>
+            <p class=" price">750 ml</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹40</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/122997a.jpg?ts=1688628277" alt="Kinley Soda Water With Extra Punch" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Kinley Soda Water With</p>
+            <p class=" my-B">Extra Punch</p>
+            <p class=" price">750 ml</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹20</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/34354a.jpg?ts=1687263266" alt="Bisleri Soda Water" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Bisleri Soda Water</p>
+            <p class=" my-B"><br></p>
+            <p class=" price">750 ml</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹20</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/298a.jpg?ts=1689327541" alt="Maaza Mango Drink 600 ml" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Maaza Mango Drink</p>
+            <p class=" my-B">600 ml</p>
+            <p class=" price">600 ml</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹42</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/33216a.jpg?ts=1692431685" alt="B Natural Mixed Fruit Juice" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">B Natural Mixed Fruit</p>
+            <p class=" my-B">1L</p>
+            <p class=" price">600 ml</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹85<div style="color: rgb(130, 130, 130); font-weight: 400; font-size: 12px; text-decoration-line: line-through;">₹130</div></p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+<h2 class="h2here">Candies & Gums</h2>
+<section class="Main  ">
+    <div class="my-list ">
+        
+        <div class="card shadow my-card1  flex-column p-2 d-inline-block">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/481313a.jpg?ts=1687333270" alt="Nicotex Mint Nicotine Gum (Sugar Free)" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="imgpad" class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Nicotex Mint Nicotine</p>
+            <p class=" my-B">Gum(Sugar Free)</p>
+            <p class=" price">25 pieces</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹284</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+
+        <div class="card shadow my-card1 d-inline-block flex-column p-2 ">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/105159a.jpg?ts=1688443502" alt="Orbit Spearmint Flavour Sugar Free Chewing Gum" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Orbit Spearmint Flavour</p>
+            <p class=" my-B">Sugar Free Chewing</p>
+            <p class=" price">22 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹48<div style="color: rgb(130, 130, 130); font-weight: 400; font-size: 12px; text-decoration-line: line-through;">₹50</div></p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="card shadow my-card1 d-inline-block flex-column p-2">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/440073a.jpg?ts=1691835531" alt="Orbit Mixed Fruit Flavour Chewing Gum (Sugar Free)" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Orbit Mixed fruit</p>
+            <p class=" my-B">Flavour Chewing Gum...</p>
+            <p class=" price">22 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹48<div style="color: rgb(130, 130, 130); font-weight: 400; font-size: 12px; text-decoration-line: line-through;">₹50</div></p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/429851a.jpg?ts=1690813268" alt="Happydent Wave Sugar Free Chewing Gum 18 Pcs" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Happydent Wave Sugar</p>
+            <p class=" my-B">Free Chewing Gum 18</p>
+            <p class=" price">28.9 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹48<div style="color: rgb(130, 130, 130); font-weight: 400; font-size: 12px; text-decoration-line: line-through;">₹50</div></p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+        <div class="card shadow my-card1 d-inline-block flex-column p-2">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/440075a.jpg?ts=1688471561" alt="Wrigley's Doublemint Peppermint Candy" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Wrigley's Doublemint</p>
+            <p class=" my-B">Peppermint Canday</p>
+            <p class=" price">30 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹50</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+        <div class="card shadow my-card1 d-inline-block flex-column p-2">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/495586a.jpg?ts=1690813422" alt="Center Fresh Sugar Free Mint Candy" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Center Fresh Sugar</p>
+            <p class=" my-B">Free Mint Candy</p>
+            <p class=" price">35 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹85<div style="color: rgb(130, 130, 130); font-weight: 400; font-size: 12px; text-decoration-line: line-through;">₹100</div></p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/368388a.jpg?ts=1690813231" alt="Mentos Pure Fresh Mint Chewing Gum" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Mentos Pure Fresh Mint</p>
+            <p class=" my-B">Chewing Gum</p>
+            <p class=" price">54.6 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹85<div style="color: rgb(130, 130, 130); font-weight: 400; font-size: 12px; text-decoration-line: line-through;">₹100</div></p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/458221a.jpg?ts=1690815447" alt="Center Fresh Chewy Mints Spearmint Flavour Chewing Gum" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Center Fresh Chewy</p>
+            <p class=" my-B">Mints Spearmint flavo...</p>
+            <p class=" price">33 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹46<div style="color: rgb(130, 130, 130); font-weight: 400; font-size: 12px; text-decoration-line: line-through;">₹50</div></p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/495587a.jpg?ts=1680680930" alt="Center Fruit Liquid Filled Pineapple Chewing Gum (Tennis Ball Shape)" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Center Fruit Liquid</p>
+            <p class=" my-B">Filled Pineapple</p>
+            <p class=" price">67.5 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹46<div style="color: rgb(130, 130, 130); font-weight: 400; font-size: 12px; text-decoration-line: line-through;">₹50</div></p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/440074a.jpg?ts=1688471561" alt="Wrigley's Doublemint Lemonmint Candy" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Wrigley's Doublemint</p>
+            <p class=" my-B">Lemonmint Candy</p>
+            <p class=" price">32.5 g</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹48</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/481312a.jpg?ts=1687333270" alt="Nicotex Mint Nicotine Gum" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Nicotex Mint Nicotine</p>
+            <p class=" my-B">Gum</p>
+            <p class=" price">9 pieces</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹101</p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+        <div class="card shadow my-card1 d-inline-block  flex-column p-2">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/348066a.jpg?ts=1687616749" alt="Nicotex Paan Nicotine Gum" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+            <div class="time bg-light" style="text-transform: uppercase; font-weight: 700; font-size: 9px; color: rgb(54, 54, 54); "><i class="fa-regular fa-clock"></i> 9 mins</div>
+            <p class=" my-A">Nicotex Paan Nicotine</p>
+            <p class=" my-B">gum</p>
+            <p class=" price">9 pieces</p>
+            <div class="d-flex justify-content-between  align-items-center w-100 last-div">
+               <p class="mrp ">₹101<div style="color: rgb(130, 130, 130); font-weight: 400; font-size: 12px; text-decoration-line: line-through;">₹130</div></p>
+               <button class=" btn btn-outline-success px-3 my-btn">ADD</button>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+
+<div class="row">
+    <h5 class="offset-1 xyz col-4">UseFull Links</h5>
+    <h5 class="col-6">Categories</h5>
+</div>
+
+
+
+<section class="row abcd m-5">
+     
+    <div class="offset-1 col-4 d-flex ">
+        <div class="d-flex  flex-column">
+            <span>About</span>
+            <span>Careers</span>
+            <span>Blog</span>
+            <span>Press</span>
+            <span>Value</span>
+        </div>
+        <div class="d-flex autom flex-column">
+            <span>Privacy</span>
+            <span>Terms</span>
+            <span>FAQS</span>
+            <span>Security</span>
+            <span>Mobile</span>
+            <span>Contact</span>
+        </div>
+        <div class="d-flex mx-2 flex-column">
+            <span>Partner</span>
+            <span>Express</span>
+            <span>Seller</span>
+            <span>Warehouse</span>
+            <span>Deliver</span>
+        </div>
+         
+    </div>
+    
+    <div class=" col-6 d-flex ">
+        <div class="d-flex  flex-column">
+            <span>Vegetable & Fruits</span>
+            <span>Cold Drinks & Juices</span>
+            <span>Bakery & Juices</span>
+            <span>Dry Fruits,Masala & Oil</span>
+            <span>Organic & Premium</span>
+            <span>Pharma & Wellness</span>
+            <span>Ice Creams & Frozen Desserts</span>
+            <span>Beauty & Cosmetics</span>
+        </div>
+        <div class="d-flex autom flex-column">
+            <span>Dairy & Breakfast</span>
+            <span>Instant & Frozen Food</span>
+            <span>Sweet Tooth</span>
+            <span>Sauces & Spreads</span>
+            <span>Paan Corner</span>
+            <span>Cleaning Essentials</span>
+            <span>Personal Care</span>
+            <span>Toys & Games</span>
+        </div>
+        <div class="d-flex mx-2 flex-column">
+            <span>Munchies</span>
+            <span>Tea,Coffee & Health Drinks</span>
+            <span>Atta, Rice & Dal</span>
+            <span>Chicken,Meat & Fish</span>
+            <span>Baby Care</span>
+            <span>Home & Office</span>
+            <span>Pet Care</span>
+            <span>Print Store</span>
+        </div>
+         
+    </div>
+    <div class="offset-1">
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="secondlast   container row">
+    <div class="col-4 offset-1 lastfooter">
+        © Blink Commerce Private Limited (formerly known as Grofers India Private Limited), 2016-2023
+    </div>
+    <div class="col-3 d-flex smallimg justify-content-right">
+      <h6 class="DownloadApp">Download App</h6>
+      <img  src="https://blinkit.com/d61019073b700ca49d22.png" alt="img1">
+      <img src="https://blinkit.com/8ed033800ea38f24c4f0.png" alt="img2">
+    </div>
+    <div class="col-3 offset-1 d-flex justify-content-between">
+        <i class="fa-brands fa-facebook fa-2xl"></i>
+        <i class="fa-brands fa-twitter fa-2xl"></i>
+        <i class="fa-brands fa-instagram fa-2xl"></i>
+        <i class="fa-brands fa-linkedin fa-2xl"></i>
+        <i class="fa-brands fa-threads fa-2xl"></i>
+    </div>
+
+</footer>
+
+
+<footer class="lastfooter container">
+    “Blinkit” is owned & managed by "Blink Commerce Private Limited" (formerly known as Grofers India Private Limited) and is not related, linked or interconnected in whatsoever manner or nature, to “GROFFR.COM” which is a real estate services business operated by “Redstone Consultancy Services Private Limited”.
+</footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+</body>
+</html>

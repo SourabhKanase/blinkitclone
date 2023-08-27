@@ -1,0 +1,159 @@
+.Location>h5{
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+.Location>p{
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+.inputone{
+    width:40vw;
+    border:none;
+    background-color: #f8f8f8;
+}
+.inputdiv{
+    background-color: #f8f8f8;
+    height:45px;
+    border-radius: 13px;
+    display: flex;
+    align-items:center;
+    padding: 10px; 
+}
+.navbar{
+    display: inline;
+    padding-left:5px;
+}
+.Location{
+    
+}
+.Mycart{
+    display: inline-block;
+    margin-right:50px;
+}
+.navbar{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Mycart{
+    background-color: #0c831f !important;
+}
+.heroimages{
+    width:85vw;
+    margin-inline:100px;
+}
+.sectiontwo{
+    width:100vw;
+}
+.lastfooter{
+    color:#9d9d9d;
+}
+.smallimg>img{
+    
+    height: 37%;
+}
+.one{
+    width:20px;
+    height: 45px;
+    margin-inline:20px;
+}
+.abc{
+    overflow-x: scroll;
+    width: 82%;
+    margin: auto;
+}
+.two{
+    white-space: nowrap;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+element.style {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 9px;
+    color: rgb(54, 54, 54);
+}
+.my-A{
+    color: rgb(31, 31, 31);
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 0px;
+    margin-top: 1px;
+}
+.my-B,.mrp{
+    color: rgb(31, 31, 31);
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 1px;
+}
+.price{
+    font-size:15px;
+    color:#666666;
+    margin-top: 3px !important;
+    margin-bottom: 3px !important;
+}
+/* .my-btn{
+   margin-bottom: 5px;
+} */
+.mrp{
+    margin-top: 0px;
+    
+}
+.time{
+  width:fit-content   ;
+}
+.img1{
+    margin-top: 0px;
+   
+}
+.last-div{
+    margin-top: 0px;
+}
+.my-list{
+    width:100%;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    white-space: nowrap;
+}
+.Main{
+    overflow-x: scroll;
+    width: 82%;
+    margin: auto;
+   
+}
+.my-card1{
+    width:179px;
+    box-sizing: border-box;
+    margin-inline: 10px;
+    
+}
+.green{
+    color:#0c831f;
+}
+.h2here{
+    padding-left: 140px;
+    margin-top: 30px;;
+}
+.DownloadApp{
+    color:#666666;
+}
+.imgpad{
+    margin-left: 10px;;
+}
+.autom{
+    margin-inline:100px;
+}
+.abcd{
+    margin-bottom: 400px !important;
+    
+}
+.xyz{
+    margin-left: 200px;
+}
