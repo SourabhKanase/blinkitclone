@@ -25,10 +25,16 @@
 .navbar{
     display: inline;
     padding-left:5px;
-}
-.Location{
+    background-color: #ffffff !important;
+    z-index: 1000 !important; 
     
 }
+.mynav{
+    position: sticky !important;
+    overflow: hidden !important;
+    top: 0;
+}
+
 .Mycart{
     display: inline-block;
     margin-right:50px;
@@ -51,6 +57,7 @@
 }
 .lastfooter{
     color:#9d9d9d;
+    
 }
 .smallimg>img{
     
@@ -148,18 +155,22 @@ element.style {
     margin-left: 10px;;
 }
 .autom{
-    margin-inline:100px;
+    margin-inline:80px;
 }
 .abcd{
     margin-bottom: 100px !important;
     
 }
 .xyza{
-    margin-left: 200px;
-    margin-top: 300px;
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 300px ;
 }
 .Lastcolor{
     color:#a0a0a0;
     font-size:15px;
     margin-top: 5px;
+}
+.Grofers{
+    font-size:13px;
 }
