@@ -174,3 +174,49 @@ element.style {
 .Grofers{
     font-size:13px;
 }
+@media screen and (max-width:768px) {
+    .mynav{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width:100vw;
+        align-items: center;
+        justify-content: center;
+    }
+    .sectiontwo{
+        overflow: hidden;
+        width:100vw;
+    }
+    .heroimages{
+        display:flex;
+        flex-direction: column;
+        width: auto;
+    }
+    .xyz1{
+        width:100%;
+    }
+    .abcd{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .smallimg ,.secondlast{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: fit-content;
+        align-items: center;
+        justify-content: center;
+    }
+    .img1,.img2{
+        height:3.5rem;
+        width: 3.5rem;
+    }
+    .ciso{
+        display: flex;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+}
